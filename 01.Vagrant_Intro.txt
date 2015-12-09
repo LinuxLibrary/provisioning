@@ -1,0 +1,23 @@
+Vagrant for Provisioning
+========================
+
+Vagrant is a provisioning tool. If we are about to use Vagrant for provisioning then we need to have one of the provider.
+Provider is nothing but a Cloud or Hypervisor environment. We have several providers.
+ 1. Virtual Box (Most popular to use with Vagrant)
+ 2. VMware
+ 3. Open Stack
+ 4. Docker
+ 5. AWS
+
+To start using Vagrant you need to download vagrant. Go to the following link and download Vagrant respective to your OS
+and its architecture. In my case i am using RHEL6 32-bit OS. So i have downloaded for it.
+https://www.vagrantup.com/downloads.html
+
+Also download VirtualBox with respective to your OS from the below link.
+https://www.virtualbox.org/wiki/Linux_Downloads
+
+Now let us install these both.
+
+# cd ~/Downloads
+# rpm -ivh 
+vagrant_1.7.4_i686.rpm VirtualBox-5.0-5.0.10_104061_el6-1.i686.rpm
