@@ -31,3 +31,40 @@ FOR UBUNTU 14.04 try the following
 # apt-get install vagrant
 # apt-get install virtualbox
 
+I am preferring RHEL or CentOS in my case as I have been facing some issues working with Vagrant in Ubuntu.
+I'll be updating soon on complete procedure working with Ubuntu as well.
+
+Now let us come to the case of RHEL.
+While installing VirtualBox if you found any dependency failure for libSDL feel free to install that through YUM.
+And try installing VirtualBox then. You will also need to install the kernel modules which are required for VirtualBox.
+Please install the following packages, after that VirtualBox package and reboot your machine.
+
+# yum install kernel* dkms gcc libSDL*
+
+Once you are done then create a directory for Vagrant as your Vagrant workspace.
+
+# mkdir /vagrantProject
+# cd /vagrantProject
+
+Now initialize your first VM using vagrant.
+In this case i am using Ubuntu to be installed through Vagrant.
+
+# vagrant init ubuntu/trusty64
+
+You are ready with your first setup config which is stored in the Vagrantfile in your Vagrant Project directory.
+Start your VM with "vagrant up". It will first download the ubuntu image from virtualbox and once the download finishes
+it will start it up.
+
+# vagrant up
+
+Now you can ssh to your ubuntu box by using "vagrant ssh"
+
+# vagrant ssh
+
+If you want to shutdown your VM you can use
+# vagrant suspend
+	(or)
+# vagrant halt
+
+If in case you don't need that VM then you can destroy that VM.
+# vagrant destroy
