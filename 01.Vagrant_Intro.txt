@@ -19,5 +19,5 @@ https://www.virtualbox.org/wiki/Linux_Downloads
 Now let us install these both.
 
 # cd ~/Downloads
-# rpm -ivh 
-vagrant_1.7.4_i686.rpm VirtualBox-5.0-5.0.10_104061_el6-1.i686.rpm
+# rpm -ivh vagrant_1.7.4_i686.rpm 
+# rpm -ivh VirtualBox-5.0-5.0.10_104061_el6-1.i686.rpm
