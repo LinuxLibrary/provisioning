@@ -10,7 +10,10 @@ Provider is nothing but a Cloud or Hypervisor environment. We have several provi
  5. AWS
 
 To start using Vagrant you need to download vagrant. Go to the following link and download Vagrant respective to your OS
-and its architecture. In my case i am using RHEL6 32-bit OS. So i have downloaded for it.
+and its architecture. In my case i am using RHEL6 32-bit, Ubuntu 14.04. So i have downloaded for those
+
+FOR RHEL6 Visit below links and download the packages
+=====================================================
 https://www.vagrantup.com/downloads.html
 
 Also download VirtualBox with respective to your OS from the below link.
@@ -21,3 +24,10 @@ Now let us install these both.
 # cd ~/Downloads
 # rpm -ivh vagrant_1.7.4_i686.rpm 
 # rpm -ivh VirtualBox-5.0-5.0.10_104061_el6-1.i686.rpm
+
+FOR UBUNTU 14.04 try the following
+==================================
+# apt-get update
+# apt-get install vagrant
+# apt-get install virtualbox
+
