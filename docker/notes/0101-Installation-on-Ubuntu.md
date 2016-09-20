@@ -27,16 +27,16 @@ Make sure you have installed the prerequisites for your Ubuntu version.
 Then, install Docker using the following:
 
 - Update your APT package index.
-  $ sudo apt-get update
+	- $ sudo apt-get update
 
 - Install Docker.
-  $ sudo apt-get install docker-engine
+	- $ sudo apt-get install docker-engine
 
 - Start the docker daemon.
-  $ sudo service docker start
+	- $ sudo service docker start
 
 - Verify docker is installed correctly.
-  $ sudo docker run hello-world
+	- $ sudo docker run hello-world
 
   This command downloads a test image and runs it in a container. When the container runs
   it prints an informational message. Then, it exits.
