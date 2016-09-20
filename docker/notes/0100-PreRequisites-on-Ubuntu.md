@@ -22,12 +22,12 @@ Prerequisites :
 - Next update package information, ensure that APT works with the https method, and that CA cer
   -tificates are installed.
 
- $ sudo apt-get update
- $ sudo apt-get install apt-transport-https ca-certificates
+ 	- $ sudo apt-get update
+	- $ sudo apt-get install apt-transport-https ca-certificates
 
 - Add the new GPG key.
 
- $ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+	- $ sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
 - Open the /etc/apt/sources.list.d/docker.list file in your favorite editor.
   If the file doesn’t exist, create it.
@@ -36,24 +36,24 @@ Prerequisites :
   The possible entries are:
 
 - On Ubuntu Precise 12.04 (LTS)
-  deb https://apt.dockerproject.org/repo ubuntu-precise main
+  	- deb https://apt.dockerproject.org/repo ubuntu-precise main
 - On Ubuntu Trusty 14.04 (LTS)
-  deb https://apt.dockerproject.org/repo ubuntu-trusty main
+	- deb https://apt.dockerproject.org/repo ubuntu-trusty main
 - On Ubuntu Wily 15.10
-  deb https://apt.dockerproject.org/repo ubuntu-wily main
+	- deb https://apt.dockerproject.org/repo ubuntu-wily main
 - On Ubuntu Xenial 16.04 (LTS)
-  deb https://apt.dockerproject.org/repo ubuntu-xenial main
+	- deb https://apt.dockerproject.org/repo ubuntu-xenial main
 
 - Save and close the /etc/apt/sources.list.d/docker.list file.
 
 - Update the APT package index.
-  $ sudo apt-get update
+	- $ sudo apt-get update
 
 - Purge the old repo if it exists.
-  $ sudo apt-get purge lxc-docker
+	- $ sudo apt-get purge lxc-docker
 
 - Verify that APT is pulling from the right repository.
-  $ apt-cache policy docker-engine
+	- $ apt-cache policy docker-engine
 
 From now on when you run apt-get upgrade, APT pulls from the new repository.
 
@@ -63,10 +63,10 @@ The linux-image-extra-* packages allows you use the aufs storage driver.
 To install the linux-image-extra-* packages:
 
 - Update your package manager.
-  $ sudo apt-get update
+	- $ sudo apt-get update
 
 - Install the recommended packages.
-  $ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
+	- $ sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 
 - Go ahead and install Docker.
 
@@ -96,14 +96,14 @@ libgl1-mesa-glx-lts-trusty		- To learn more about the reasons for these packages
 To upgrade your kernel and install the additional packages, do the following:
 
 - Update your package manager.
-  $ sudo apt-get update
+	- $ sudo apt-get update
 
 - Install both the required and optional packages.
-  $ sudo apt-get install linux-image-generic-lts-trusty
+	- $ sudo apt-get install linux-image-generic-lts-trusty
 
 - Depending on your environment, you may install more as described in the preceding table.
 
 - Reboot your host.
-  $ sudo reboot
+	- $ sudo reboot
 
 - After your system reboots, go ahead and install Docker.
