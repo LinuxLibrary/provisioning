@@ -76,9 +76,9 @@ you must upgrade it. Refer to this table to see which packages are required for 
 
 Package	Description
 -------------------
-linux-image-generic-lts-trusty | Generic Linux kernel image. This kernel has AUFS built in. Thi
-				|  -s is required to run Docker.
-
+linux-image-generic-lts-trusty   | Generic Linux kernel image. This kernel has AUFS built in. Thi
+			 	 |  -s is required to run Docker.
+---------------------------------|--------------------------------------------------------------
 linux-headers-generic-lts-trusty | Allows packages such as ZFS and VirtualBox guest additions whi
 				 | -ch depend on them. If you didn't install the headers for your
 				 | existing kernel, then you can skip these headers for the"trust
