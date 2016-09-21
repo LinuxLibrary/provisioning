@@ -76,22 +76,22 @@ you must upgrade it. Refer to this table to see which packages are required for 
 
 Package	Description
 -------------------
-linux-image-generic-lts-trusty		- Generic Linux kernel image. This kernel has AUFS built in. Thi
-					  -s is required to run Docker.
+linux-image-generic-lts-trusty | Generic Linux kernel image. This kernel has AUFS built in. Thi
+				|  -s is required to run Docker.
 
-linux-headers-generic-lts-trusty	- Allows packages such as ZFS and VirtualBox guest additions whi
-					  -ch depend on them. If you didn't install the headers for your
-					  existing kernel, then you can skip these headers for the"trust
-					  -y" kernel. If you're unsure, you should include this package 
-					  for safety.
+linux-headers-generic-lts-trusty | Allows packages such as ZFS and VirtualBox guest additions whi
+				 | -ch depend on them. If you didn't install the headers for your
+				 | existing kernel, then you can skip these headers for the"trust
+				 | -y" kernel. If you're unsure, you should include this package 
+				 | for safety.
 
-xserver-xorg-lts-trusty			- Optional in non-graphical environments without Unity/Xorg. Req
-					  -uired when running Docker on machine with a graphical environ
-					  -ment.
+xserver-xorg-lts-trusty		 | Optional in non-graphical environments without Unity/Xorg. Req
+				 | -uired when running Docker on machine with a graphical environ
+				 | -ment.
 
-libgl1-mesa-glx-lts-trusty		- To learn more about the reasons for these packages, read the
-					  installation instructions for backported kernels, specifically
-					  the LTS Enablement Stack — refer to note 5 under each version.
+libgl1-mesa-glx-lts-trusty	 | To learn more about the reasons for these packages, read the
+				 | installation instructions for backported kernels, specifically
+				 | the LTS Enablement Stack — refer to note 5 under each version.
 
 To upgrade your kernel and install the additional packages, do the following:
 
