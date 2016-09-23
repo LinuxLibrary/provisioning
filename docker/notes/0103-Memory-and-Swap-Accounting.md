@@ -24,4 +24,4 @@ GRUB_CMDLINE_LINUX="cgroup_enable=memory swapaccount=1"
 ```
 $ sudo update-grub
 ```
-Reboot your system.
+- Reboot your system.
