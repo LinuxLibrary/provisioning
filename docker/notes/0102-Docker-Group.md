@@ -1,4 +1,5 @@
-Create a Docker group
+# Create a Docker group
+
 The docker daemon binds to a Unix socket instead of a TCP port. By default that Unix socket
 is owned by the user root and other users can access it with sudo. For this reason, docker
 daemon always runs as the root user.
