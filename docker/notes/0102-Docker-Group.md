@@ -11,18 +11,22 @@ socket read/writable by the docker group.
 To create the docker group and add your user:
 
 - Create the docker group.
-	- $ sudo groupadd docker
-
+```
+$ sudo groupadd docker
+```
 - Add your user to docker group.
-	- $ sudo usermod -aG docker $USER
-
+```
+$ sudo usermod -aG docker $USER
+```
 - Log out and log back in.
   This ensures your user is running with the correct permissions.
 
 - Verify your work by running docker without sudo.
-	- $ docker run hello-world
+```
+$ docker run hello-world
 ```
 If this fails with a message similar to this:
-Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
+
+> Cannot connect to the Docker daemon. Is 'docker daemon' running on this host?
+
 Check that the DOCKER_HOST environment variable is not set for your shell. If it is, unset it.
-```
