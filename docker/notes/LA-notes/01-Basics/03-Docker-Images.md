@@ -12,9 +12,6 @@
 
 ```
 # docker pull hello-world
-
-```
-# docker pull hello-world
 latest: Pulling from hello-world
 
 7a5a2d73abce: Pull Complete
