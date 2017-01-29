@@ -17,7 +17,6 @@ latest: Pulling from hello-world
 7a5a2d73abce: Pull Complete
 Digest: sha256:7820f4620e6cf3e795643fac2f6b09e7fd0a29e7e5c4eee6aac9ba0bedca158c
 Status: Downloaded newer image for hello-world:latest
-
 ```
 
 - Let us list out the images once
