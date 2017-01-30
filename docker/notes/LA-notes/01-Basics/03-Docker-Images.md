@@ -53,7 +53,7 @@ For more examples and ideas, visit:
  https://docs.docker.com/engine/userguide/
 ```
 
-> We can run the container also with the IMAGE ID as well and it will also does the same.
+> WE CAN RUN THE CONTAINERS ALSO WITH THE IMAGE ID AS WELL AND IT WILL ALSO DOES THE SAME.
 
 - Now let us get the ***centos*** image. If we don't mention the tag by default it will pull the latest version of the image. But if we want a specific version then we need to mention the tag of the image.
 
