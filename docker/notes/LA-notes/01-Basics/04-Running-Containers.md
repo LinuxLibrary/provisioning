@@ -30,4 +30,10 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 # docker stop 2e8cbb120796 (or) docker stop goofy_colden
 ```
 
+- We can also name the containers other than following the default names.
 
+```
+# docker run -it --name=CentOS1 centos:centos6 /bin/bash
+# docker stop CentOS1
+# docker rm -v CentOS1
+```
