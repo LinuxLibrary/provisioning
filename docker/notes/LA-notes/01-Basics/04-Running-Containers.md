@@ -19,3 +19,15 @@
 - If we have a image from which we can run any application like a webserver or something then we can see the difference. When we start the webserver it will runs till we stop it.
 
 > NOTE: SERVICES/DAEMONS WILL NOT BE RUN ON THE CONTAINERS. ANYTHING WHICH RUNS ON A CONTAINER IS AN APPLICATION, SO WE NEED TO SET THE DAEMON OFF TO RUN ANY APPLICATION WITHIN A CONTAINER
+
+- If we want to exit the container which is running at current then we need to stop that either by using its name or by the CONTAINER ID.
+
+```
+# docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+2e8cbb120796        centos:centos6      "/bin/bash"         3 minutes ago       Up 3 minutes                            goofy_colden  
+
+# docker stop 2e8cbb120796 (or) docker stop goofy_colden
+```
+
+
