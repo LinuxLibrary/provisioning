@@ -1,7 +1,18 @@
-# Provisioning with Docker
+# Docker
 
-* Docker Overview :
+***Definition*** : Docker is an open source project to pack, ship and run any application as a lightweight container.
 
-Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. By taking advantage of Docker’s methodoligies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production.
+- Through the docker containers we can pack customized applications which provides consistent way of packaging any application and shipping in a consistent way.
 
-https://docs.docker.com/engine/understanding-docker/
+- The packaged application along with OS can be stored as an Docker Image and based on an Image number of containers can be launched as of our choice.
+
+- We can prefer Docker as the containers are lightweight as compared to any VMs as this acts like OS level virtualization and it is open source.
+
+- Docker communicates with the Linux Kernel through the following modules
+
+```
+libcontainer
+libvert
+LXC(Linux Containers)
+systemd-nspawn
+```
